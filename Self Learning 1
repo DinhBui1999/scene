@@ -1,0 +1,22 @@
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Ki1;
+using Ki1.Utils;
+
+public class GameHandler : MonoBehaviour {
+
+    private void Start() {
+        Debug.Log("GameHandler.Start");
+
+        int i = 0;
+        FunctionPeriodic.Create(() => {
+            CMDebug.TextPopupMouse("Thisisalooppppppppppppppppp "+i+"!");
+            i++;
+        }, .5f);
+    }
+
+    private void Update() {
+        
+    }
